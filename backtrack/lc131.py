@@ -17,10 +17,5 @@ class Solution:
                     tmp.append(s[start:i + 1])
                     back(s, i + 1, tmp)
                     tmp.pop()
-                # reversed(t)
-                # if s[start: i + 1] == t:
-                # if s[start: i + 1] == s[i:start-1:-1]:
-                # if is_palindromic_string(s[start: i + 1]):
-
         back(s, 0, [])
         return res
