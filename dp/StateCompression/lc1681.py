@@ -28,3 +28,8 @@ class Solution:
             return res
         res = dp(0)
         return res if res != math.inf else -1
+
+    def minimumIncompatibility(self, nums: List[int], k: int) -> int:
+
+        return 0
+
