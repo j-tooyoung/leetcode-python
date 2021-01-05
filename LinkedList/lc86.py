@@ -1,6 +1,6 @@
 from LinkedList.lc2 import ListNode
 
-
+#
 class Solution:
     def partition(self, head: ListNode, x: int) -> ListNode:
         if not head: return head
