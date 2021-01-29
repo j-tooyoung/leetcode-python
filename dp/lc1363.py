@@ -31,4 +31,4 @@ class Solution:
                 s = a + b[:-2] + c
         s = sorted(s, reverse=True)
         # print(s)
-        return "".join(str(s)).replace(',', '').replace(' ', '').strip('[').strip(']')
+        return "".join(str(s)).replace(',', '').replace(' ', '').strip('[').strip( ']')
