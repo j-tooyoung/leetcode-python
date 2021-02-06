@@ -1,3 +1,4 @@
+from bisect import bisect_left
 from typing import List
 
 # 300. 最长递增子序列
@@ -39,3 +40,17 @@ class Solution:
                 m[index + 1] = nums[i]
             ans = max(ans, dp[i])
         return ans
+
+
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        d = []
+        for a in nums:
+            i = bisect_left(d,a)
+            if i < len(d):
+                d[i] =a
+            elif not d or d[-1] < a:
+                d.append(a)
+        return len(d)
+
+
+
